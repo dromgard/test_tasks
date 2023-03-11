@@ -1,9 +1,16 @@
 .header {
+  position: relative;
   margin: 0;
   padding: 46px 150px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.header__background {
+  position: absolute;
+  top: 0;
+  left: 62%;
 }
 
 .header__container {
@@ -14,6 +21,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 .header__text {
@@ -100,6 +108,10 @@
   }
 
   .header__contacts {
+    display: none;
+  }
+
+  .header__background {
     display: none;
   }
 }

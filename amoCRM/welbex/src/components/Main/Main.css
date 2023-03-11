@@ -1,4 +1,5 @@
 .main {
+  position: relative;
   margin: 0;
   padding: 94px 150px 69px;
   display: flex;
@@ -6,11 +7,36 @@
   justify-content: space-between;
 }
 
+.main__background-red-big {
+  position: absolute;
+  top: -43px;
+  left: 38%;
+}
+
+.main__background-red-small {
+  position: absolute;
+  bottom: 50px;
+  right: 38%;
+}
+
+.main__background-purple-mobile,
+.main__background-red-mobile,
+.main__background-noise {
+  display: none;
+}
+
+.main__background-red-small {
+  position: absolute;
+  bottom: 50px;
+  right: 38%;
+}
+
 .main__container {
   max-width: 362px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  z-index: 2;
 }
 
 .main__title {
@@ -135,6 +161,16 @@
   }
 }
 
+@media screen and (max-width: 890px) {
+  .main__background-red-big {
+    top: -12px;
+  }
+
+  .main__background-red-small {
+    right: 45%;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .main__container {
     max-width: 272px;
@@ -158,6 +194,39 @@
 @media screen and (max-width: 730px) {
   .main {
     padding: 40px 14px 65px;
+    background: no-repeat center right
+        url("../../images/purple-light-mobile.svg"),
+      no-repeat bottom left url("../../images/red-light-mobile.svg");
+  }
+
+  .main__background-red-big,
+  .main__background-red-small {
+    display: none;
+  }
+
+  .main__background-purple-mobile {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+  }
+
+  .main__background-red-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+  }
+
+  .main__background-noise {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: top left url("../../images/noise.svg");
+    z-index: 1;
   }
 }
 
@@ -225,6 +294,17 @@
   }
 
   .main__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    background: no-repeat top left url("../../images/main-bg.svg");
+  }
+
+  .main__background-purple-mobile,
+  .main__background-red-mobile {
     display: none;
   }
 }
