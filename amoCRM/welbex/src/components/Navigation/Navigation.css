@@ -6,3 +6,20 @@
   gap: 30px;
   list-style: none;
 }
+
+@media screen and (max-width: 1280px) {
+  .navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .navigation {
+    gap: 16px;
+  }
+}
