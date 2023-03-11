@@ -31,9 +31,7 @@ function Header() {
           </Link>
         </div>
       </div>
-      <div className="header__container">
-        <p className="header__description">крупный интегратор CRM в Росcии и ещё 8 странах</p>
-      </div>
+      <p className="header__description">крупный интегратор CRM в Росcии и ещё 8 странах</p>
     </div>
   );
 }
