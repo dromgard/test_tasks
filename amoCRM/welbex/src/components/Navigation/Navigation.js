@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav>
+    <nav className="header__navigation">
       <ul className="navigation">
         <li><Link className="link header__text" to="/" >Услуги</Link></li>
         <li><Link className="link header__text" to="/" >Виджеты</Link></li>

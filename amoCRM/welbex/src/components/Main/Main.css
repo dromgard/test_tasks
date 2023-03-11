@@ -56,6 +56,17 @@
   color: #e4e5ea;
 }
 
+.main__text_visible {
+  display: none;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .main__text-color {
   font-weight: 700;
   background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
@@ -79,6 +90,10 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.main__list-line {
+  display: none;
 }
 
 .main__text-details {
@@ -106,4 +121,110 @@
   line-height: 19px;
   text-align: center;
   color: #e4e5ea;
+}
+
+@media screen and (max-width: 1280px) {
+  .main {
+    padding: 94px 100px 69px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    padding: 94px 50px 69px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .main__container {
+    max-width: 272px;
+  }
+
+  .main__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .main__subtitle {
+    margin: 15px 0 0;
+  }
+
+  .main__text-details {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    padding: 40px 14px 65px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .main {
+    padding: 40px 14px 65px;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .main__container {
+    max-width: 550px;
+    align-items: flex-start;
+  }
+
+  .main__details {
+    margin: 20px 0;
+  }
+
+  .main__text-details {
+    text-align: left;
+  }
+
+  .main__text {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main__container {
+    max-width: 272px;
+  }
+
+  .main__details {
+    margin: 20px 0 0;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 10px;
+    row-gap: 14px;
+  }
+
+  .main__details-block {
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .main__list-line {
+    display: block;
+  }
+
+  .main__text {
+    display: none;
+  }
+
+  h2.main__text {
+    display: block;
+  }
+
+  .main__text_visible {
+    display: block;
+  }
+
+  .main__text-details {
+    display: none;
+  }
+
+  .main__button {
+    display: none;
+  }
 }
