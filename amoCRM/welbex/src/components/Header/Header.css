@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 10px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +62,11 @@
   }
 
   .header__contacts {
-    gap: 20px;
+    gap: 10px;
+  }
+
+  .header__social {
+    gap: 10px;
   }
 }
 
@@ -77,13 +82,13 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 890px) {
   .header__description {
     display: none;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 730px) {
   .header {
     padding: 20px 16px;
   }
@@ -99,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .navigation li:nth-child(5n) {
     display: none;
   }

@@ -23,8 +23,9 @@ function Footer() {
             <li><Link className="link footer__link" to="/" >Наши клиенты</Link></li>
           </ul>
           <ul className="footer__list">
+            <li className="footer__link-visible"><Link className="link footer__link" to="/" >Благодарность клиентов</Link></li>
             <li><Link className="link footer__link" to="/" >Кейсы</Link></li>
-            <li><Link className="link footer__link" to="/" >Благодарственные письма</Link></li>
+            <li className="footer__link-invisible"><Link className="link footer__link" to="/" >Благодарственные письма</Link></li>
             <li><Link className="link footer__link" to="/" >Сертификаты</Link></li>
             <li><Link className="link footer__link" to="/" >Блог на Youtube</Link></li>
             <li><Link className="link footer__link" to="/" >Вопрос / Ответ</Link></li>
