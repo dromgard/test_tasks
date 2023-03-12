@@ -38,7 +38,7 @@ function Footer() {
           <li><p className="footer__text">+7 555 555-55-55</p></li>
           <li>
             <ul className="footer__social">
-              <SocialLinks />
+              <SocialLinks isFooter={true} />
             </ul>
           </li>
           <li><p className="footer__link">Москва, Путевой проезд 3с1, к 902</p></li>

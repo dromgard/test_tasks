@@ -10,12 +10,12 @@
 .main__background-red-big {
   position: absolute;
   top: -43px;
-  left: 38%;
+  left: 35%;
 }
 
 .main__background-red-small {
   position: absolute;
-  bottom: 50px;
+  bottom: 67px;
   right: 38%;
 }
 
@@ -23,12 +23,6 @@
 .main__background-red-mobile,
 .main__background-noise {
   display: none;
-}
-
-.main__background-red-small {
-  position: absolute;
-  bottom: 50px;
-  right: 38%;
 }
 
 .main__container {
@@ -61,6 +55,7 @@
 .main__subtitle {
   margin: 30px 0 0;
   padding: 0;
+  max-width: 275px;
   font-family: "Montserrat", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -79,7 +74,18 @@
   font-size: 18px;
   line-height: 22px;
   text-align: right;
+  letter-spacing: 0.05em;
   color: #e4e5ea;
+}
+
+h2.main__text {
+  margin: 16px 0 0 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h3.main__text {
+  text-transform: uppercase;
 }
 
 .main__text_visible {
@@ -95,18 +101,17 @@
 
 .main__text-color {
   font-weight: 700;
-  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  background: linear-gradient(92deg, #fcb045 27.14%, #fd1d1d 121.36%), #e4e5ea;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 5%;
+  letter-spacing: 0em;
 }
 
 .main__details {
   margin: 40px 0 61px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 135px);
   gap: 30px;
 }
 
@@ -240,6 +245,15 @@
   .main__container {
     max-width: 550px;
     align-items: flex-start;
+  }
+
+  h2.main__text {
+    margin: 0;
+    max-width: 280px;
+  }
+
+  .main__text-color {
+    text-transform: lowercase;
   }
 
   .main__details {

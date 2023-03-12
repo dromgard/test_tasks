@@ -15,6 +15,10 @@
   gap: 20px;
 }
 
+.footer__container:nth-child(2n) {
+  margin: 0 67px 0 0;
+}
+
 .footer__container:last-of-type {
   align-items: flex-end;
 }
@@ -134,14 +138,22 @@ a.footer__info-text {
     padding: 55px 50px 20px;
   }
 
+  .footer__container:nth-child(2n) {
+    margin: 0 30px 0 0;
+  }
+
   .footer__navigation {
-    gap: 48px;
+    gap: 44px;
   }
 }
 
 @media screen and (max-width: 730px) {
   .footer {
     padding: 35px 15px 60px;
+  }
+
+  .footer__container:nth-child(2n) {
+    margin: 0;
   }
 }
 
@@ -157,6 +169,7 @@ a.footer__info-text {
   }
 
   .footer__list {
+    gap: 8px;
     align-items: flex-start;
   }
 
@@ -170,6 +183,19 @@ a.footer__info-text {
 
   .footer__social {
     margin: 0;
+  }
+
+  .footer__social-icon-telegram {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer__social-icon-viber,
+  .footer__social-icon-whatsapp {
+    display: block;
+    width: 20px;
+    height: 24px;
   }
 
   .footer__info {
