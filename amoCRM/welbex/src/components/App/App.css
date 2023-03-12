@@ -56,3 +56,18 @@
     background: #0e1014;
   }
 }
+
+@media screen and (max-width: 590px) {
+  .social-icon-telegram {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .social-icon-viber,
+  .social-icon-whatsapp {
+    display: block;
+    width: 20px;
+    height: 24px;
+  }
+}
