@@ -104,6 +104,7 @@ h3.main__text {
   background: linear-gradient(92deg, #fcb045 27.14%, #fd1d1d 121.36%), #e4e5ea;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 0em;
 }
 
